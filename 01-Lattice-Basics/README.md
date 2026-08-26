@@ -27,7 +27,7 @@ The important point is that the coefficients are integers.
 The vectors $b_1,\ldots,b_n$ form a basis of the lattice.
 
 
----
+
 
 ## 2. A Simple Example
 
