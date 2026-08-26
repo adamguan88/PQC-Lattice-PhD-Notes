@@ -85,3 +85,58 @@ $$
 $$
 
 In this simple example, the lattice is the ordinary two-dimensional integer grid.
+
+
+
+
+## 3. Integer Combinations
+
+The key idea behind a lattice is the use of integer combinations.
+
+For two basis vectors $b_1$ and $b_2$, every lattice point has the form
+
+$$
+z_1b_1 + z_2b_2,
+$$
+
+where
+
+$$
+z_1,z_2 \in \mathbb{Z}.
+$$
+
+For example, choosing
+
+$$
+z_1 = 2,
+\qquad
+z_2 = -1,
+$$
+
+gives the lattice vector
+
+$$
+2b_1 - b_2.
+$$
+
+More generally,
+
+$$
+\mathcal{L}(B) = \{Bz : z \in \mathbb{Z}^n\}.
+$$
+
+The restriction
+
+$$
+z \in \mathbb{Z}^n
+$$
+
+is what makes the set discrete.
+
+If we allowed arbitrary real coefficients instead,
+
+$$
+z \in \mathbb{R}^n,
+$$
+
+we would generally obtain a continuous vector space rather than a discrete lattice.
