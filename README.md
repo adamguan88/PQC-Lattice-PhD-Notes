@@ -117,6 +117,6 @@ The goal is to understand why their underlying assumptions are believed to be ha
 
 ## Author
 
-**Adam**
+**Adam Guan**
 
 Cybersecurity & Mathematical Foundations of Post-Quantum Cryptography
