@@ -1,81 +1,122 @@
-PQC Lattice PhD Notes
+# PQC Lattice PhD Notes
 
-PhD-level lecture notes on lattice-based post-quantum cryptography.
+## PhD-Level Lecture Notes on Lattice-Based Post-Quantum Cryptography
 
-This repository is a personal study and research project focused on the mathematical foundations, security assumptions, reductions, and cryptanalysis of lattice-based cryptography.
+A research-oriented set of lecture notes on the mathematical foundations of lattice-based post-quantum cryptography.
 
-Course Roadmap
+The goal is to move progressively from mathematical foundations to cryptographic assumptions, security reductions, and cryptanalysis.
 
-01 — Lattice Basics
+---
 
-- Euclidean lattices
-- Basis and dimension
-- Fundamental parallelepiped
+## Course Roadmap
+
+### 01 — Lattice Basics
+
+- Lattices
+- Bases
+- Rank and dimension
+- Norms
 - Short vectors
-- Closest vectors
+- SVP
+- CVP
 
-02 — Learning With Errors
+### 02 — Learning With Errors
 
-- The LWE assumption
+- LWE
 - Search-LWE
 - Decision-LWE
 - Error distributions
 - Worst-case to average-case reductions
 
-03 — Short Integer Solutions
+### 03 — Short Integer Solutions
 
-- The SIS problem
+- SIS
 - Average-case hardness
 - Connections to lattice problems
 
-04 — Ring-LWE
+### 04 — Ring-LWE
 
 - Polynomial rings
 - Algebraic structure
-- Ring-LWE assumption
-- Efficiency and security considerations
+- Ring-LWE
+- Efficiency and security
 
-05 — Module-LWE
+### 05 — Module-LWE
 
 - Modules over polynomial rings
 - Ring-LWE vs. Module-LWE
-- The role of algebraic structure
+- Structured lattice assumptions
 
-06 — Security Reductions
+### 06 — Security Reductions
 
-- Reduction-based security
-- Worst-case lattice problems
-- What reductions actually prove
-- The gap between provable hardness and concrete security
+- Computational hardness
+- Worst-case hardness
+- Average-case hardness
+- Reduction techniques
 
-07 — Cryptanalysis
+### 07 — Cryptanalysis
 
-- Lattice reduction
+- LLL
 - BKZ
 - Enumeration
+- Sieving
 - Hybrid attacks
 - Concrete security estimation
 
-A Central Question
+---
+
+## Central Research Question
 
 A recurring question throughout these notes is:
 
+How does algebraic structure affect the security and efficiency of lattice-based cryptography?
+
+In particular:
+
 $$
-\text{How much algebraic structure should we introduce into a lattice-based assumption?}
+\text{structure}
+\longrightarrow
+\text{efficiency}
 $$
 
-Structure can provide substantial efficiency gains, but it may also introduce additional algebraic properties that could potentially be exploited by an attacker.
+but potentially also:
 
-Understanding this trade-off is central to the design of practical post-quantum cryptographic systems.
+$$
+\text{structure}
+\longrightarrow
+\text{additional attack surface}.
+$$
+
+This creates a fundamental trade-off between efficiency and security.
 
 ---
 
-Author
+## Research Philosophy
 
-Adam
+The course follows the progression:
+
+$$
+\text{intuition}
+\rightarrow
+\text{definition}
+\rightarrow
+\text{problem}
+\rightarrow
+\text{reduction}
+\rightarrow
+\text{cryptanalysis}
+\rightarrow
+\text{research question}.
+$$
+
+The goal is not simply to memorize cryptographic constructions.
+
+The goal is to understand why their underlying assumptions are believed to be hard, what theoretical reductions actually establish, and where the remaining uncertainty lies.
+
+---
+
+## Author
+
+**Adam**
 
 Cybersecurity & Mathematical Foundations of Post-Quantum Cryptography
-
----
-
-«These notes are intended as a research-oriented study project. They are continuously revised as I work through the literature.»
