@@ -25,3 +25,63 @@ $$
 The important point is that the coefficients are integers.
 
 The vectors $b_1,\ldots,b_n$ form a basis of the lattice.
+
+
+---
+
+## 2. A Simple Example
+
+Consider the basis vectors
+
+$$
+b_1 =
+\begin{pmatrix}
+1 \\
+0
+\end{pmatrix},
+\qquad
+b_2 =
+\begin{pmatrix}
+0 \\
+1
+\end{pmatrix}.
+$$
+
+The corresponding basis matrix is
+
+$$
+B =
+\begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix}.
+$$
+
+For an integer vector
+
+$$
+z =
+\begin{pmatrix}
+z_1 \\
+z_2
+\end{pmatrix}
+\in \mathbb{Z}^2,
+$$
+
+we obtain
+
+$$
+Bz =
+\begin{pmatrix}
+z_1 \\
+z_2
+\end{pmatrix}.
+$$
+
+Therefore,
+
+$$
+\mathcal{L}(B) = \mathbb{Z}^2.
+$$
+
+In this simple example, the lattice is the ordinary two-dimensional integer grid.
