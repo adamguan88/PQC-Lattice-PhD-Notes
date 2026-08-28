@@ -140,3 +140,160 @@ z \in \mathbb{R}^n,
 $$
 
 we would generally obtain a continuous vector space rather than a discrete lattice.
+
+
+## 4. Norms and Length
+
+To talk about short lattice vectors, we need a way to measure the length of a vector.
+
+For a vector
+
+$$
+x = (x_1,x_2,\ldots,x_n),
+$$
+
+the Euclidean norm, or $l_2$ norm, is defined as
+
+$$
+\|x\|_2 = \sqrt{x_1^2+x_2^2+\cdots+x_n^2}.
+$$
+
+For example, consider
+
+$$
+x = (3,4).
+$$
+
+Its Euclidean norm is
+
+$$
+\|x\|_2 = \sqrt{3^2+4^2} = 5.
+$$
+
+Therefore, the norm gives us a numerical measure of the length of a vector.
+
+---
+
+## 5. Why Do We Care About Short Vectors?
+
+Suppose we have a lattice
+
+$$
+\mathcal{L}(B) = \{Bz : z \in \mathbb{Z}^n\}.
+$$
+
+There are usually infinitely many lattice vectors.
+
+Some are very long, while others are relatively short.
+
+For example, if
+
+$$
+v \in \mathcal{L}(B),
+$$
+
+then
+
+$$
+2v \in \mathcal{L}(B)
+$$
+
+as well.
+
+But
+
+$$
+\|2v\|_2 = 2\|v\|_2.
+$$
+
+So if we want to understand the geometry of a lattice, naturally we want to know how short its nonzero vectors can be.
+
+This leads to one of the central computational problems in lattice theory.
+
+---
+
+## 6. The Shortest Vector Problem
+
+The **Shortest Vector Problem**, usually abbreviated as **SVP**, asks us to find a shortest nonzero vector in a lattice.
+
+Define the first minimum of the lattice as
+
+$$
+\lambda_1(\mathcal{L}) = \min_{v \in \mathcal{L}\setminus\{0\}} \|v\|_2.
+$$
+
+A shortest vector is a vector
+
+$$
+v^\star \in \mathcal{L}\setminus\{0\}
+$$
+
+such that
+
+$$
+\|v^\star\|_2 = \lambda_1(\mathcal{L}).
+$$
+
+In simple language:
+
+**SVP asks:**
+
+> Given a lattice, can we find its shortest nonzero vector?
+
+---
+
+## 7. A Simple SVP Example
+
+Consider the lattice
+
+$$
+\mathcal{L} = \mathbb{Z}^2.
+$$
+
+The vector
+
+$$
+v = (1,0)
+$$
+
+belongs to the lattice.
+
+Its length is
+
+$$
+\|v\|_2 = 1.
+$$
+
+No nonzero integer vector can have Euclidean norm smaller than $1$.
+
+Therefore,
+
+$$
+\lambda_1(\mathbb{Z}^2) = 1.
+$$
+
+For this particular lattice, SVP is trivial.
+
+The interesting situation is high-dimensional lattices with complicated bases.
+
+---
+
+## 8. The Important Distinction
+
+A lattice can have a very simple basis while the same lattice can also be represented using a very complicated basis.
+
+For example, two different basis matrices may generate the same lattice:
+
+$$
+\mathcal{L}(B) = \mathcal{L}(B').
+$$
+
+However, the vectors appearing in $B$ and $B'$ may have very different lengths.
+
+This observation is fundamental.
+
+A lattice basis is not necessarily a collection of short vectors.
+
+Finding a good basis is therefore itself an important algorithmic problem.
+
+This will eventually lead us to lattice reduction algorithms such as **LLL** and **BKZ**.
