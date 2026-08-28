@@ -141,6 +141,8 @@ $$
 
 we would generally obtain a continuous vector space rather than a discrete lattice.
 
+---
+
 
 ## 4. Norms and Length
 
