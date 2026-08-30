@@ -392,19 +392,26 @@ $$
 The distance from $t$ to $(2,2)$ is
 
 $$
-d(t,(2,2)) = √((2.2-2)^2+(1.7-2)^2)
+d(t,(2,2)) =
+\sqrt{
+(2.2-2)^2 + (1.7-2)^2
+}
 $$
 
 Therefore,
 
 $$
-d(t,(2,2)) = √(0.2^2+(-0.3)^2)
+d(t,(2,2)) =
+\sqrt{
+0.2^2 + (-0.3)^2
+}
 $$
 
 So,
 
 $$
-d(t,(2,2)) = √0.13
+d(t,(2,2)) =
+\sqrt{0.13}
 $$
 
 The CVP problem asks us to determine which lattice point minimizes this distance.
