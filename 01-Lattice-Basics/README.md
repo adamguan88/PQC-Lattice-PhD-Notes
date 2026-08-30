@@ -344,13 +344,13 @@ The difference between SVP and CVP can be summarized as follows.
 SVP asks for the shortest nonzero lattice vector:
 
 $$
-v^\star = \operatorname*{arg\,min}_{v\in\mathcal{L}\setminus\{0\}} \|v\|_2.
+v^\star = \arg\min_{v\in\mathcal{L}\setminus\{0\}} \|v\|_2.
 $$
 
 CVP asks for the lattice vector closest to a given target:
 
 $$
-v^\star = \operatorname*{arg\,min}_{v\in\mathcal{L}} \|t-v\|_2.
+v^\star = \arg\min_{v\in\mathcal{L}} \|t-v\|_2.
 $$
 
 Therefore:
