@@ -325,8 +325,9 @@ that minimizes the distance to $t$.
 Formally,
 
 $$
-v^\star = \operatorname*{arg\,min}_{v\in\mathcal{L}} \|t-v\|_2.
+v^\star = \arg\min_{v\in\mathcal{L}} \|t-v\|_2.
 $$
+
 
 In simple language:
 
