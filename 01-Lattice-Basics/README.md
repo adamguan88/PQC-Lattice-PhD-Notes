@@ -484,19 +484,17 @@ $$
 SVP asks for the shortest nonzero lattice vector:
 
 $$
-\lambda_1(\mathcal{L})
-=
+\lambda_1(\mathcal{L}) =
 \min_{v\in\mathcal{L}\setminus\{0\}}
-\|v\|_2.
+\sqrt{v_1^2+\cdots+v_n^2}
 $$
 
 CVP asks for the lattice vector closest to a target:
 
 $$
-v^\star
-=
-\operatorname*{arg\,min}_{v\in\mathcal{L}}
-\|t-v\|_2.
+v^\star =
+\arg\min_{v\in\mathcal{L}}
+\sqrt{(t_1-v_1)^2+\cdots+(t_n-v_n)^2}
 $$
 
 These geometric problems provide the mathematical background for understanding modern lattice-based cryptography.
